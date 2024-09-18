@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <i class="fa-solid fa-shield"></i>
+        <i class="fa-solid fa-microchip"></i>
+        <h1> Leandro Rodriguez</h1>
+        <nav>
+            <ul>
+                <i class="fa-solid fa-code-commit"></i>
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#portfolio">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <i class="fa-solid fa-code-commit"></i>
+            </ul>
+        </nav>
+    </header>
+    <section id="about" style="display: flex; align-items: flex-start;">
+        <div style="margin-right: 10px;">
+            <h2>Sobre Mí</h2>
+            <p>Hola, soy Leandro Rodriguez, tengo 26 años y actualmente soy un operador de Mesa de Ayuda Nivel 2 trabajando para DXC Technology para el Cliente Arcos Dorados.</p>
+            <p>Siempre tuve interés en la informática y actualmente estoy cursando la Tecnicatura Universitaria en Programación en la Universidad Tecnológica Nacional.</p>
+            <p>Mis conocimientos en programacion son variados pero no fuertes, teniendo base en C++, C, HTML, SQL Server y MySQL</p>
+        </div>
+        <img src="WhatsApp Image 2024-09-18 at 13.45.43.jpeg" alt="Foto de Leandro" style="width:200px; height:auto; border-radius:75%; margin-left: 20px; margin-top: 50px;">
+    </section>
+    <section id="portfolio">
+        <h2>Proyectos</h2>
+        <div class="project">
+            <h3>Curso SQL</h3>      
+            <p>Creacion de base de datos con tablas referido a gestion de un sistema de Tickets de Call Center que contiene tablas con restricciones, vistas, procedimientos almacenados, triggers, funciones, tablas log.</p>
+            <a href="https://github.com/rodriguezleandro98/Tp_Final_Rodriguez.git">
+                <i class="fab fa-github icono-grande"></i> 
+            </a>
+            <p></p>
+            <a href="https://www.coderhouse.com/ar/certificados/65024afc4c88e413b37c4adf?lang=">
+                <i class="fas fa-certificate icono-grande"></i> 
+            </a>
+        </div>
+        <div class="project">
+            <h3>Winforms de Articulos</h3>
+            <p>Trabajo en conjunto con dos compañeros de la facultad donde se tuvo que hacer una aplicacion de escritorio para darle funcionalidad de ABML de articulos a un negocio.</p>
+            <a href="https://github.com/AntonioMelino/tp-winform-equipo-11A">
+                <i class="fab fa-github icono-grande"></i>
+            </a>
+        </div>
+    </section>
+    <section id="contact" style="margin-top: -60px;">
+        <h2>Contacto</h2>
+        <form method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+    
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+    
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+    
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Mi Portafolio</p>
+        <p>
+            <a href="mailto:leandrohrodriguez98@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/leandro-hernan-rodriguez-42688b17a/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/rodriguezleandro98">
+                <i class="fab fa-github icono-grande"></i>
+            </a>
+        </p>
+    </footer>
+</body>
+</html>
