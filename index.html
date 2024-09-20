@@ -25,57 +25,67 @@
             </ul>
         </nav>
     </header>
-    <section id="about" style="display: flex; align-items: flex-start;">
-        <div style="margin-right: 10px;">
-            <h2>Sobre Mí</h2>
-            <p>Hola, soy Leandro Rodriguez, tengo 26 años y actualmente soy un operador de Mesa de Ayuda Nivel 2 trabajando para DXC Technology para el Cliente Arcos Dorados.</p>
-            <p>Siempre tuve interés en la informática y actualmente estoy cursando la Tecnicatura Universitaria en Programación en la Universidad Tecnológica Nacional.</p>
-            <p>Mis conocimientos en programacion son variados pero no fuertes, teniendo base en C++, C, HTML, SQL Server y MySQL</p>
-        </div>
-        <img src="WhatsApp Image 2024-09-18 at 13.45.43.jpeg" alt="Foto de Leandro" style="width:200px; height:auto; border-radius:75%; margin-left: 20px; margin-top: 50px;">
-    </section>
-    <section id="portfolio">
-        <h2>Proyectos</h2>
-        <div class="project">
-            <h3>Curso SQL</h3>      
-            <p>Creacion de base de datos con tablas referido a gestion de un sistema de Tickets de Call Center que contiene tablas con restricciones, vistas, procedimientos almacenados, triggers, funciones, tablas log.</p>
-            <a href="https://github.com/rodriguezleandro98/Tp_Final_Rodriguez.git">
-                <i class="fab fa-github icono-grande"></i> 
-            </a>
-            <p></p>
-            <a href="https://www.coderhouse.com/ar/certificados/65024afc4c88e413b37c4adf?lang=">
-                <i class="fas fa-certificate icono-grande"></i> 
-            </a>
-        </div>
-        <div class="project">
-            <h3>Winforms de Articulos</h3>
-            <p>Trabajo en conjunto con dos compañeros de la facultad donde se tuvo que hacer una aplicacion de escritorio para darle funcionalidad de ABML de articulos a un negocio.</p>
-            <a href="https://github.com/AntonioMelino/tp-winform-equipo-11A">
-                <i class="fab fa-github icono-grande"></i>
-            </a>
-        </div>
-    </section>
-    <section id="contact" style="margin-top: -60px;">
-        <h2>Contacto</h2>
-        <div class="container">
-            <form id="contactForm">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
+    <div class="main-content">
+        <section id="about" style="display: flex; align-items: flex-start;">
+            <div style="margin-right: 10px;">
+                <h2>Sobre Mí</h2>
+                <p>Hola, soy Leandro Rodriguez, tengo 26 años y actualmente soy un operador de Mesa de Ayuda Nivel 2 trabajando para DXC Technology para el Cliente Arcos Dorados.</p>
+                <p>Siempre tuve interés en la informática y actualmente estoy cursando la Tecnicatura Universitaria en Programación en la Universidad Tecnológica Nacional.</p>
+                <p>Mis conocimientos en programacion son variados pero no fuertes, teniendo base en C++, C, HTML, SQL Server y MySQL</p>
+            </div>
+            <img src="WhatsApp Image 2024-09-18 at 13.45.43.jpeg" alt="Foto de Leandro" style="width:200px; height:auto; border-radius:75%; margin-left: 20px; margin-top: 50px;">
+        </section>
+        <section>
+            <img src="https://cdn-icons-png.flaticon.com/256/1903/1903496.png" alt="" style="width:100px; height:auto; margin-left: 20px;">
+            <img src="https://cdn-icons-png.flaticon.com/256/1199/1199128.png" alt="" style="width:100px; height:auto; margin-left: 20px;">
+            <img src="https://cdn-icons-png.flaticon.com/256/1723/1723208.png" alt="" style="width:100px; height:auto; margin-left: 20px;">
+            <img src="https://cdn-icons-png.flaticon.com/256/8176/8176725.png" alt="" style="width:100px; height:auto; margin-left: 20px;">
+            <img src="https://cdn-icons-png.flaticon.com/256/29/29515.png" alt="" style="width:100px; height:auto; margin-left: 20px;">
+        </section>
+        <section id="portfolio">
+            <h2>Proyectos</h2>
+            <div class="project">
+                <h3>Curso SQL</h3>      
+                <p>Creacion de base de datos con tablas referido a gestion de un sistema de Tickets de Call Center que contiene tablas con restricciones, vistas, procedimientos almacenados, triggers, funciones, tablas log.</p>
+                <a href="https://github.com/rodriguezleandro98/Tp_Final_Rodriguez.git">
+                    <i class="fab fa-github icono-grande"></i> 
+                </a>
+                <p></p>
+                <a href="https://www.coderhouse.com/ar/certificados/65024afc4c88e413b37c4adf?lang=">
+                    <i class="fas fa-certificate icono-grande"></i> 
+                </a>
+            </div>
+            <div class="project">
+                <h3>Winforms de Articulos</h3>
+                <p>Trabajo en conjunto con dos compañeros de la facultad donde se tuvo que hacer una aplicacion de escritorio para darle funcionalidad de ABML de articulos a un negocio.</p>
+                <a href="https://github.com/AntonioMelino/tp-winform-equipo-11A">
+                    <i class="fab fa-github icono-grande"></i>
+                </a>
+            </div>
+        </section>
+        <section id="contact" style="margin-top: -60px;">
+            <h2>Contacto</h2>
+            <div class="container">
+                <form id="contactForm">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
     
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
     
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" required></textarea>
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" required></textarea>
     
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-        <script src="script.js"></script>
-        <label id="responseMessage" class="hidden"></label>
-    </section>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <script src="script.js"></script>
+            <label id="responseMessage" class="hidden"></label>
+        </section>
+    </div>
     <footer>
         <p>&copy; 2024 Mi Portafolio</p>
+        <P style="font-size:larger;">REDES</P>
         <p>
             <a href="mailto:leandrohrodriguez98@gmail.com">
                 <i class="fa-solid fa-envelope"></i>

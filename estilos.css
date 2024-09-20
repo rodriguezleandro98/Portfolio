@@ -47,6 +47,9 @@ h2 {
     border: 1px solid #ddd;
     padding: 1em;
     margin-bottom: 1em;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Ajusta la sombra aquí */
+    backdrop-filter: blur(10px); /* Ajusta el nivel de desenfoque aquí */
+    border-radius: 8px; /* Opcional: bordes redondeados */
 }
 .project:hover{
     background-color: rgb(214, 213, 213);
@@ -110,7 +113,7 @@ input, textarea {
     border-radius: 4px;
 }
 button {
-    background-color: #28a745;
+    background-color: grey;
     color: white;
     padding: 12px 15px;
     border: none;
@@ -120,7 +123,7 @@ button {
     font-size: 16px;
 }
 button:hover {
-    background-color: #218838;
+    background-color: black;
 }
 
 i:hover{
@@ -146,4 +149,19 @@ i:hover{
 .visible {
     display:contents;
     opacity: 1;
+}
+
+.main-content {
+    height: calc(100vh - (altura del header + altura del footer)); /* Ajusta la altura */
+    background: linear-gradient(800deg, #6d534e, #7da138, #4b60be);
+    background-size: 600% 600%;
+    animation: gradient 15s ease infinite;
+    position: relative; /* Para asegurar que se ajuste a la altura especificada */
+    z-index: 0; /* Asegúrate de que esté detrás del header y footer */
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
