@@ -165,3 +165,12 @@ i:hover{
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group {
+    width: 45%; /* Ajusta el ancho según sea necesario */
+}

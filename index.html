@@ -64,24 +64,39 @@
             </div>
         </section>
         <section id="contact" style="margin-top: -60px;">
-            <h2>Contacto</h2>
-            <div class="container">
-                <form id="contactForm">
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="name" required>
-    
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-    
-                    <label for="message">Mensaje:</label>
-                    <textarea id="message" name="message" required></textarea>
-    
-                    <button type="submit">Enviar</button>
-                </form>
+            <h2>Contacto por WhatsApp o correo</h2>
+            <div class="form-container" style="display: flex; justify-content: space-between;">
+                <div class="form-group">
+                    <form id="whatsappForm" onsubmit="sendWhatsApp1(event)">
+                        <label for="nameWhatsApp">Nombre:</label>
+                        <input type="text" id="nameWhatsApp" required>
+                        
+                        <label for="messageWhatsApp">Mensaje:</label>
+                        <textarea id="messageWhatsApp" rows="4" required></textarea>
+                        
+                        <button type="submit">Enviar por WhatsApp</button>
+                    </form>
+                    <label id="responseMessageWhatsApp" class="hidden"></label>
+                </div>
+        
+                <div class="form-group">
+                    <form id="emailForm" onsubmit="sendEmail(event)">
+                        <label for="nameEmail">Nombre:</label>
+                        <input type="text" id="nameEmail" required>
+                        
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" required>
+                        
+                        <label for="messageEmail">Mensaje:</label>
+                        <textarea id="messageEmail" required></textarea>
+                        
+                        <button type="submit">Enviar por correo</button>
+                    </form>
+                    <label id="responseMessageEmail" class="hidden"></label>
+                </div>
             </div>
-            <script src="script.js"></script>
-            <label id="responseMessage" class="hidden"></label>
         </section>
+        <script src="script.js"></script>        
     </div>
     <footer>
         <p>&copy; 2024 Mi Portafolio</p>
